@@ -27,6 +27,7 @@ function TechnicalWriting () {
             browser extensions and more. I also write for a lot of online websites, content-writing agencies, and software
             companies.
           </p>
+          <p className="text-blue-500 hidden" />
         </div>
       </div>
       <h3 className="text-4xl lg:text-3xl text-center font-medium my-5 lg:my-3">Wrote For</h3>

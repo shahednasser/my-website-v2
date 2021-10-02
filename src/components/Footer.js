@@ -9,6 +9,7 @@ function Footer () {
         <p>
           Drop me an email at <Link href="mailto:shahednasser@gmail.com" label="shahednasser@gmail.com" color="green" intensity="200" /> and let's talk some more!
         </p>
+        <p className="text-green-200 hidden" />
         <p>
           You can also find me on social media, where we can talk and discuss development some more!
         </p>
