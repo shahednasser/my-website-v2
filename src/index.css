@@ -1,13 +1,52 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.blue-gradient-background {
+  background: linear-gradient(270deg, #48c6ef, #6f86d6);
+  background-size: 400% 400%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.orange-gradient-background {
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+}
+
+.indigo-gradient-background {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+}
+
+.green-gradient-background {
+  background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+}
+
+.gradient-background-animated {
+  -webkit-animation: gradient-animation 3s ease infinite;
+  -moz-animation: gradient-animation 3s ease infinite;
+  animation: gradient-animation 3s ease infinite;
+}
+
+@-webkit-keyframes gradient-animation {
+  0%{background-position:31% 0%}
+  50%{background-position:70% 100%}
+  100%{background-position:31% 0%}
+}
+@-moz-keyframes gradient-animation {
+  0%{background-position:31% 0%}
+  50%{background-position:70% 100%}
+  100%{background-position:31% 0%}
+}
+@keyframes gradient-animation { 
+  0%{background-position:31% 0%}
+  50%{background-position:70% 100%}
+  100%{background-position:31% 0%}
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgb(134, 134, 134);
+}
+
+html {
+  @apply overflow-x-hidden;
 }
