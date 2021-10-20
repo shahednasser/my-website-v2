@@ -10,10 +10,12 @@ import devIcon from '../assets/devto.svg'
 function SocialLinks ({alignment = 'start'}) {
   return (
     <div className={`flex mt-3 justify-center lg:justify-${alignment}`}>
+      <div className="justify-start hidden"></div>
+      <div className="justify-center hidden"></div>
       <a href="https://www.instagram.com/shahednasser95/" target="_blank" className="mr-3">
         <img src={instagramIcon} alt="Instagram" />
       </a>
-      <a href="https://twitter.com/shahednasserr" target="_blank" className="mr-3">
+      <a href="https://twitter.com/shahednasser95" target="_blank" className="mr-3">
         <img src={twitterIcon} alt="Twitter" />
       </a>
       <a href="https://github.com/shahednasser" target="_blank" className="mr-3">
